@@ -1,28 +1,38 @@
-/*------------------------------------------------------------RESET--------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------RESET-------------------------------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-image: url(../img/championsbg2.webp);
-    height: 300vh;
+/*------------------------------------------------------------------------------MAIN-----------------------------------------------------------------------------------------*/
+
+.space {
+    height: 2vh;
+    background-image: url(../img/championsbg2.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    filter: saturate(1.5);
 }
 
-/*-------------------------------------------------------------MAIN--------------------------------------------------------------------------------*/
 .start {
     background-image: url(../img/black-bg.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
+    filter: saturate(1.5) brightness(1.1);
 }
 
+.row {
+    filter: saturate(1.5) contrast(1.3);
+    background-image: url(../img/championsbg2.webp);
+    height: fit-content;
+    background-position: center;
+    background-repeat: repeat-y;
+}
 
 .gridContainer1 {
-    margin-top: 5%;
+    margin-top: 4%;
     height: fit-content;
     width: 70%;
     margin-left: 15%;
@@ -76,7 +86,7 @@ body {
 }
 
 main .gridContainer3 {
-    margin-top: 3%;
+    margin-top: 0%;
     z-index: 1;
     margin-bottom: -5%;
     margin-left: 15%;
@@ -90,7 +100,8 @@ main .gridContainer3 {
     border: rgb(0, 0, 0) 0.3rem solid;
 }
 
-.world {
+main .world {
+    margin-top: 3%;
     grid-template-columns: repeat(6, 1fr);
     display: flex;
     justify-items: center;
@@ -98,6 +109,7 @@ main .gridContainer3 {
 }
 
 .gridContainer3 h2 {
+    text-shadow: 0px 4px 8px #000000;
     font-family: 'Roboto';
     grid-column: 3/4;
     grid-row: auto;
@@ -116,18 +128,12 @@ main .gridContainer3 {
 
 
 .container1 {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(30, 1fr);
     grid-template-rows: repeat(30, 1fr);
     position: relative;
-}
-
-.championsCoins {
-    position: absolute;
-    grid-column: 12/20;
-    grid-row: 1/14;
 }
 
 .championsCoins img {
@@ -144,11 +150,6 @@ main .gridContainer3 {
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-}
-
-.ronaldo {
-    grid-column: 1/12;
-    grid-row: 4/31;
 }
 
 .ronaldo img {
@@ -183,15 +184,134 @@ main .gridContainer3 {
     transform: scale(1.01);
 }
 
-.messi {
-    grid-column: 19/31;
-    grid-row: 5/31;
+.start div .wsp {
+    border: #16A400 0.5rem solid;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+}
+
+.start div .linkWsp {
+    text-decoration: none;
+    color: #fff;
+    font-family: roboto, sans-serif;
+    background: #16A400;
+    text-shadow: 0px 2px 4px #000;
+}
+
+.start div .wsp .linkWsp {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.start div .wsp:hover {
+    border: white 0.5rem solid;
+    background: white;
+}
+
+.start div .linkWsp:hover {
+    background: white;
+    font-size: 1.1rem;
+    color: #16A400;
+    text-shadow: 0px 2px 4px #ffffff;
+
+}
+
+.start div div .linkWsp .wspImgWhite {
+    height: 1.5rem;
+    width: 3rem;
+}
+
+.start div div .linkWsp .wspImgGreen {
+    height: 1.5rem;
+    width: 3rem;
+    display: none;
+}
+
+.start div div .linkWsp:hover .wspImgWhite {
+    display: none;
+}
+
+.start div div .linkWsp:hover .wspImgGreen {
+    display: block;
+}
+
+
+
+.start div div .linkIg .igImg {
+    height: 1.5rem;
+    width: 3rem;
+    object-fit: contain;
+    margin-left: 2%;
+}
+
+.start div div .linkIg .igImg2 {
+    height: 1.5rem;
+    width: 3rem;
+    display: none;
+}
+
+.start div div .linkIg:hover .igImg {
+    display: none;
+}
+
+.start div div .linkIg:hover .igImg2 {
+    display: block;
+    margin-left: 2%;
 }
 
 
 
 
-@media screen and (min-width:2572px) {
+.start div .ig {
+    border-width: 0.5rem;
+    border-style: solid;
+    border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) 1;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+.start div .linkIg {
+    text-decoration: none;
+    color: #fff;
+    font-family: roboto, sans-serif;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    text-shadow: 0px 2px 4px #000;
+}
+
+.start div .ig .linkIg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+.start div div .linkIg img {
+    height: 1rem;
+    width: 3.5rem;
+}
+
+
+.start div .ig:hover {
+    border: rgb(0, 0, 0) 0.5rem solid;
+    background: white;
+}
+
+.start div .linkIg:hover {
+    font-size: 1.1rem;
+    background: black;
+    text-shadow: 0px 2px 4px #000;
+
+}
+
+@media screen and (min-width:5572px) {
     .gridContainer1 {
         width: 67%;
         margin-left: 16.5%;
@@ -301,156 +421,162 @@ main .gridContainer3 {
     }
 }
 
-@media screen and (max-width:1500px) {
+@media screen and (max-width:5000px) {
+    .wsp {
+        grid-column: 14/18;
+        grid-row: 19/20;
+    }
 
-    .ronaldo {
-        grid-column: 1/13;
-        grid-row: 5/31;
+    .start .container1 .championsCoins {
+        position: absolute;
+        grid-column: 12/20;
+        grid-row: 1/13;
+    }
+
+    .start div .linkWsp {
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+
+    .start div .linkIg {
+        font-size: 1.1rem;
+        font-weight: 300;
     }
 
     .messi {
-        grid-column: 18/31;
+        grid-column: 19/31;
+        grid-row: 5/31;
+    }
+
+    .ronaldo {
+        grid-column: 1/12;
+        grid-row: 4/31;
+    }
+
+    .ig {
+        grid-column: 14/18;
+        grid-row: 21/22;
+    }
+}
+
+@media screen and (max-width:1460px) {
+    .start .container1 .championsCoins {
+        position: absolute;
+        grid-column: 12/20;
+        grid-row: 3/7;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .messi {
+        grid-column: 19/31;
         grid-row: 6/31;
     }
 }
 
-.start div .wsp {
-    border: #16A400 0.5rem solid;
+@media screen and (max-width:1460px) {
+    .ig {
+        grid-column: 14/18;
+        grid-row: 23/24;
+    }
 
+    .wsp {
+        grid-column: 14/18;
+        grid-row: 20/22;
+    }
+
+    .start div .linkWsp {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .start div .linkWsp:hover {
+        font-size: 1rem;
+    }
+
+    .start div .linkIg:hover {
+        font-size: 1rem;
+    }
+
+    .start div .linkIg {
+        font-size: 1rem;
+    }
+
+    .ronaldo {
+        grid-column: 1/13;
+        grid-row: 6/31;
+    }
+
+    .messi {
+        grid-column: 19/31;
+        grid-row: 7/31;
+    }
+
+    .championsCoins {
+        position: absolute;
+        grid-column: 12/20;
+        grid-row: 6/10;
+    }
 }
 
-.start div .linkWsp {
-    text-decoration: none;
-    color: #fff;
-    grid-column: 14/18;
-    grid-row: 19/20;
-    font-family: roboto, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background: #16A400;
-    text-shadow: 0px 2px 4px #000;
+@media screen and (max-width:1275px) {
+    .linkWsp {
+        font-size: 0.9rem;
+    }
+
+    .linkIg {
+        font-size: 0.9rem;
+    }
+
+    .linkIg:hover {
+        font-size: 0.9rem;
+    }
+
+    .linkWsp:hover {
+        font-size: 0.9rem;
+    }
 }
 
-.start div .wsp .linkWsp {
+@media screen and (max-width:1151px) {
+    .linkWsp {
+        font-size: 0.7rem;
+    }
+
+    .linkWsp:hover {
+        font-size: 0.7rem;
+    }
+
+    .linkIg {
+        font-size: 0.7rem;
+    }
+
+    .linkIg:hover {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width:8500px) {
+    footer {
+        margin-top: -15%;
+        height: 15vh;
+    }
+}
+@media screen and (max-width:8500px) {
+    footer{
+        margin-top: 0;
+    }
+}
+
+
+/*-------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------*/
+
+
+footer div {
     height: 100%;
+    background-color: rgb(255, 255, 255);
     width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
 }
-
-.wsp {
-    grid-column: 14/18;
-    grid-row: 19/20;
-
-}
-
-.start div .wsp:hover {
-    border: white 0.5rem solid;
-    background: white;
-}
-
-.start div .linkWsp:hover {
-    background: white;
-    font-size: 1.1rem;
-    color: #16A400;
-    text-shadow: 0px 2px 4px #ffffff;
-    
-}
-
-.start div div .linkWsp .wspImgWhite {
-    height: 1.5rem;
-    width: 3rem;
-}
-
-.start div div .linkWsp .wspImgGreen {
-    height: 1.5rem;
-    width: 3rem;
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgWhite {
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgGreen {
-    display: block;
-}
-
-
-
-.start div div .linkIg .igImg {
-    height: 2rem;
-    width: 3.5rem;
-}
-
-.start div div .linkIg .igImg2 {
-    height: 1.5rem;
-    width: 3rem;
-    display: none;
-}
-
-.start div div .linkIg:hover .igImg {
-    display: none;
-}
-
-.start div div .linkIg:hover .igImg2 {
-    display: block;
-    margin-left: 2%;
-}
-
-
-
-
-.start div .ig {
-    border-width: 0.5rem;
-    border-style: solid;
-    border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) 1;
-}
-
-
-
-.start div .linkIg {
-    text-decoration: none;
-    color: #fff;
-    grid-column: 14/18;
-    grid-row: 23/24;
-    font-family: roboto, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    text-shadow: 0px 2px 4px #000;
-
-}
-
-.start div .ig .linkIg {
+footer div img {
     height: 100%;
-    width: 100%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-}
-
-.ig {
-    grid-column: 14/18;
-    grid-row: 21/22;
-
-}
-
-.start div div .linkIg img {
-    height: 2rem;
-    width: 3.5rem;
-}
-
-
-.start div .ig:hover {
-    border: rgb(0, 0, 0) 0.5rem solid;
-    background: white;
-}
-
-.start div .linkIg:hover {
-    font-size: 1.1rem;
-    background: black;
-    text-shadow: 0px 2px 4px #000;
-
+    width: 20%;
 }
