@@ -702,10 +702,41 @@ footer div img {
     }
 }
 /*-----------------------------------------------------------------MOBILE--------------------------------------------------------------------------*/
+@media screen and (min-width:300px)and (max-width:1023px){
+    .start {
+        height: 35vh;
+    }
+    main .start .container1 {
+        height: 35vh;
+    }
+    /*
+    .messi {grid-column: 19/31;
+            grid-row: 16/31;}
+            
+    .ronaldo{}*/
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1rem;
+        width: 2rem;
+    }
+    .start div .wsp .linkWsp {
+        font-size: 0.6rem;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.6rem;
+    }
+    .start div .ig .linkIg .igImg {
+        height: 1rem;
+        width: 2rem;
+        margin-left: 0;
+    }
+}
 
-
-
+@media screen and (min-width:347px)and (max-width:415px){
+.start .container1 .championsCoins{
+    grid-row: 6/19;
+}
+}
 
 
 
