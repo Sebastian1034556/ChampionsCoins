@@ -17,7 +17,6 @@
 
 .start {
     background-image: url(../img/black-bg.jpg);
-    height: 100vh;
     width: 100%;
     background-position: center;
     filter: saturate(1.5) brightness(1.1);
@@ -42,6 +41,7 @@
     position: relative;
     text-decoration: none;
 }
+
 .worldGrid {
     padding-bottom: 2%;
 
@@ -326,6 +326,7 @@ footer div {
     justify-content: space-around;
     align-items: center;
 }
+
 footer div img {
     object-fit: contain;
 }
@@ -560,16 +561,18 @@ footer div img {
     }
 }
 
-@media screen and (max-width:1110px){
+@media screen and (max-width:1110px) {
 
     .start div .ig .linkIg {
         font-size: 0.96rem;
     }
+
     .start div .ig .linkIg .igImg {
         height: 1.40rem;
         width: 2.8rem;
         margin-left: 0;
     }
+
     .start div .ig .linkIg .igImg2 {
         height: 1.4rem;
         width: 2.8rem;
@@ -578,22 +581,25 @@ footer div img {
 
 }
 
-@media screen and (max-width:1044px){
-.start div .ig .linkIg:hover {
-    font-size: 0.85rem;
+@media screen and (max-width:1044px) {
+    .start div .ig .linkIg:hover {
+        font-size: 0.85rem;
+    }
 }
-}
+
 @media screen and (max-width:1055px) {
     .start div .wsp .linkWsp .wspImgWhite {
         height: 1.25rem;
         width: 2.5rem;
         margin-left: -3%;
     }
+
     .start div .wsp .linkWsp .wspImgGreen {
         height: 1.25rem;
         width: 2.5rem;
         margin-left: -3%;
     }
+
     .start div .ig .linkIg {
         font-size: 0.89rem;
     }
@@ -604,23 +610,29 @@ footer div img {
         font-size: 0.8rem;
     }
 }
+
 @media screen and (max-width:973px) {
     .start div .wsp .linkWsp .wspImgWhite {
         margin-top: 0.5%;
         margin-left: -6%;
     }
+
     .start div .ig .linkIg:hover {
         font-size: 0.8rem;
     }
+
     .start div .ig .linkIg:hover .igImg {
         display: block;
     }
+
     .start div .ig:hover {
         border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) 1;
     }
+
     .start div .ig .linkIg:hover {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     }
+
     .start div .ig .linkIg:hover .igImg2 {
         display: none;
     }
@@ -631,61 +643,72 @@ footer div img {
         font-size: 0.8rem;
     }
 }
-    @media screen and (max-width:899px) {
-        .start div .wsp .linkWsp {
-            font-size: 1rem;
-        }
-        .start div .wsp .linkWsp .wspImgWhite {
-            height: 1.5rem;
-            width: 3rem;
-        }
-        .start div .wsp .linkWsp .wspImgGreen {
-            height: 1.5rem;
-            width: 3rem;
-        }
 
-        .start div .ig .linkIg {
-            font-size: 0.96rem;
-        }
-        .start div .ig .linkIg:hover {
-            font-size: 0.96rem;
-        }
+@media screen and (max-width:899px) {
+    .start div .wsp .linkWsp {
+        font-size: 1rem;
+    }
+
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.5rem;
+        width: 3rem;
+    }
+
+    .start div .wsp .linkWsp .wspImgGreen {
+        height: 1.5rem;
+        width: 3rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.96rem;
+    }
+
+    .start div .ig .linkIg:hover {
+        font-size: 0.96rem;
+    }
 }
 
 @media screen and (max-width:849px) {
     .start div .wsp .linkWsp {
         font-size: 0.95rem;
     }
+
     .start div .wsp .linkWsp .wspImgWhite {
         height: 1.3rem;
         width: 2.6rem;
     }
 }
+
 @media screen and (max-width:849px) {
-.wsp {
-    grid-column: 14/18;
-    grid-row: 20/22;
+    .wsp {
+        grid-column: 14/18;
+        grid-row: 20/22;
+    }
 }
-}
+
 @media screen and (max-width:8500px) {
     footer {
         margin-top: 0;
         height: 15vh;
     }
+
     footer div img {
         height: 100%;
         width: 12%;
     }
 }
+
 @media screen and (max-width:1200px) {
     footer {
         height: 13vh;
     }
 }
+
 @media screen and (max-width:750px) {
     footer {
         height: 10vh;
     }
+
     footer div img {
         width: 11%;
     }
@@ -696,28 +719,88 @@ footer div img {
         height: 10vh;
     }
 }
+
 @media screen and (max-width:430px) {
     footer div img {
         width: 13%;
     }
 }
+
 /*-----------------------------------------------------------------MOBILE--------------------------------------------------------------------------*/
-@media screen and (min-width:300px)and (max-width:1023px){
-    .start {
-        height: 35vh;
+@media screen and (min-width:300px) and (max-width:483px) {
+    .start div .ig .linkIg .igImg {
+        height: 1rem;
+        width: 2rem;
+        margin-left: 0;
     }
-    main .start .container1 {
-        height: 35vh;
+/*
+    .messi {
+        grid-column: 19/29;
+        grid-row: 13/31;
     }
-    /*
-    .messi {grid-column: 19/31;
-            grid-row: 16/31;}
-            
-    .ronaldo{}*/
+    .ronaldo {
+        grid-column: 0/13;
+        grid-row: 12/31;
+    }*/
     .start div .wsp .linkWsp .wspImgWhite {
         height: 1rem;
         width: 2rem;
     }
+}
+@media screen and (min-width:483px) and (max-width:550px) {
+    .start div .ig .linkIg .igImg {
+        height: 1.2rem;
+        width: 2.4rem;
+        margin-left: 0;
+    }
+
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.2rem;
+        width: 2.4rem;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:311px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.64rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.64rem;
+    }
+}
+
+@media screen and (min-width:311px) and (max-width:330px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.68rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.68rem;
+    }
+}
+
+@media screen and (min-width:329px) and (max-width:340px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.55rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.55rem;
+    }
+}
+
+@media screen and (min-width:340px) and (max-width:359px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.5rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width:360px) and (max-width:377px) {
     .start div .wsp .linkWsp {
         font-size: 0.6rem;
     }
@@ -725,25 +808,179 @@ footer div img {
     .start div .ig .linkIg {
         font-size: 0.6rem;
     }
-    .start div .ig .linkIg .igImg {
-        height: 1rem;
-        width: 2rem;
-        margin-left: 0;
+}
+
+@media screen and (min-width:377px) and (max-width:400px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.63rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.63rem;
     }
 }
 
-@media screen and (min-width:347px)and (max-width:415px){
-.start .container1 .championsCoins{
-    grid-row: 6/19;
+@media screen and (min-width:401px) and (max-width:415px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.67rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.67rem;
+    }
 }
+
+@media screen and (min-width:415px) and (max-width:429px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.72rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.72rem;
+    }
 }
 
+@media screen and (min-width:429px) and (max-width:462px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.7rem;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.68rem;
+    }
+}
 
+@media screen and (min-width:462px) and (max-width:480px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.77em;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.77rem;
+    }
 
+}
 
+@media screen and (min-width:480px) and (max-width:510px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.77em;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.77rem;
+    }
+}
+@media screen and (min-width:510px) and (max-width:550px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.83em;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.83rem;
+    }
+    .start div .ig .linkIg .igImg {
+        height: 1.3rem;
+        width: 2.6rem;
+        margin-left: 0;
+    }
 
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.3rem;
+        width: 2.6rem;
+    }
+}
+@media screen and (min-width:550px) and (max-width:600px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.88em;
+    }
 
+    .start div .ig .linkIg {
+        font-size: 0.88rem;
+    }
+    .start div .ig .linkIg .igImg {
+        height: 1.4rem;
+        width: 2.8rem;
+        margin-left: 0;
+    }
+
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.4rem;
+        width: 2.8rem;
+    }
+}
+@media screen and (min-width:600px) and (max-width:650px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.81rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.81rem;
+    }
+    .start div .ig .linkIg .igImg {
+        height: 1.3rem;
+        width: 2.6rem;
+        margin-left: 0;
+    }
+
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.3rem;
+        width: 2.6rem;
+    }
+}
+@media screen and (min-width:650px) and (max-width:700px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.96rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.96rem;
+    }
+    .start div .ig .linkIg .igImg {
+        height: 1.2rem;
+        width: 2.4rem;
+        margin-left: 0;
+    }
+
+    .start div .wsp .linkWsp .wspImgWhite {
+        height: 1.2rem;
+        width: 2.4rem;
+    }
+}
+@media screen and (min-width:749px) and (max-width:786px) {
+    .start div .wsp .linkWsp {
+        font-size: 0.915rem;
+    }
+
+    .start div .ig .linkIg {
+        font-size: 0.84rem;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:999px) {
+    .start {
+        height: 35vh;
+    }
+
+    main .start .container1 {
+        height: 35vh;
+    }
+}
+
+@media screen and (min-width:347px) and (max-width:380px) {
+    .start .container1 .championsCoins {
+        grid-row: 6/19;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width:450px) {
+    .start .container1 .championsCoins {
+        grid-row: 8/19;
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:5000px) {
+    .start {
+        height: 100vh;
+    }
+
+}
