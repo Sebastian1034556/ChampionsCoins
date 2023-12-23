@@ -244,6 +244,38 @@ main .world {
 }
 
 
+.start div .wsp:hover {
+    border: white 0.5rem solid;
+    background: white;
+
+}
+
+.start div .linkWsp:hover {
+    background: white;
+    color: #16A400;
+    text-shadow: 0px 2px 4px #ffffff;
+}
+
+.start div div .linkWsp .wspImgWhite {
+    height: 1.5rem;
+    width: 3rem;
+
+}
+
+.start div div .linkWsp .wspImgGreen {
+    height: 1.5rem;
+    width: 3rem;
+    display: none;
+}
+
+.start div div .linkWsp:hover .wspImgWhite {
+    display: none;
+}
+
+.start div div .linkWsp:hover .wspImgGreen {
+    display: block;
+}
+
 
 
 .start div .ig {
@@ -968,32 +1000,6 @@ footer div img {
 /* Cancelar hover wsp*/
 @media screen and (max-width:1000px) {
 
-    .start div .wsp:hover {
-        border: white 0.5rem solid;
-        background: white;
-        display: none;
-    }
-    
-    .start div .linkWsp:hover {
-        background: white;
-        color: #16A400;
-        text-shadow: 0px 2px 4px #ffffff;
-        display: none;
-    
-    }
-    
-    .start div div .linkWsp .wspImgWhite {
-        height: 1.5rem;
-        width: 3rem;
-
-    }
-    
-    .start div div .linkWsp .wspImgGreen {
-        height: 1.5rem;
-        width: 3rem;
-        display: none;
-    }
-    
     .start div div .linkWsp:hover .wspImgWhite {
         display: block;
     }
@@ -1003,5 +1009,19 @@ footer div img {
     }
     
     
+.start div .wsp:hover {
+    border: white 0.5rem solid;
+    background: white;
+    display: none;
+
+}
+
+.start div .linkWsp:hover {
+    background: white;
+    color: #16A400;
+    text-shadow: 0px 2px 4px #ffffff;
+    display: none;
+}
+
     
 }
