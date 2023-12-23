@@ -7,6 +7,13 @@
 
 /*------------------------------------------------------------------------------MAIN-----------------------------------------------------------------------------------------*/
 
+body {
+    height: 100vh;
+    background-image: url(../img/black-bg.jpg);
+    width: 100%;
+    background-position: center;
+    filter: saturate(1.5) brightness(1.1);
+}
 .space {
     height: 2vh;
     background-image: url(../img/championsbg2.jpg);
@@ -25,7 +32,7 @@
 .row {
     filter: saturate(1.5) contrast(1.2);
     background-image: url(../img/championsbg2.webp);
-    height: fit-content;
+    height: max-content;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -211,38 +218,6 @@ main .world {
 }
 
 
-
-.start div .wsp:hover {
-    border: white 0.5rem solid;
-    background: white;
-}
-
-.start div .linkWsp:hover {
-    background: white;
-    font-size: 1.1rem;
-    color: #16A400;
-    text-shadow: 0px 2px 4px #ffffff;
-
-}
-
-.start div div .linkWsp .wspImgWhite {
-    height: 1.5rem;
-    width: 3rem;
-}
-
-.start div div .linkWsp .wspImgGreen {
-    height: 1.5rem;
-    width: 3rem;
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgWhite {
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgGreen {
-    display: block;
-}
 
 
 
@@ -964,6 +939,9 @@ footer div img {
     main .start .container1 {
         height: 35vh;
     }
+    footer {
+        height: 7vh;
+    }
 }
 
 @media screen and (min-width:347px) and (max-width:380px) {
@@ -978,9 +956,52 @@ footer div img {
     }
 }
 
-@media screen and (min-width:1000px) and (max-width:5000px) {
+@media screen and (min-width:1000px) {
     .start {
         height: 100vh;
     }
+    main section .container1 {
+        height: 100vh;
+    }
+}
 
+/* Cancelar hover wsp*/
+@media screen and (max-width:1000px) {
+
+    .start div .wsp:hover {
+        border: white 0.5rem solid;
+        background: white;
+        display: none;
+    }
+    
+    .start div .linkWsp:hover {
+        background: white;
+        color: #16A400;
+        text-shadow: 0px 2px 4px #ffffff;
+        display: none;
+    
+    }
+    
+    .start div div .linkWsp .wspImgWhite {
+        height: 1.5rem;
+        width: 3rem;
+
+    }
+    
+    .start div div .linkWsp .wspImgGreen {
+        height: 1.5rem;
+        width: 3rem;
+        display: none;
+    }
+    
+    .start div div .linkWsp:hover .wspImgWhite {
+        display: block;
+    }
+    
+    .start div div .linkWsp:hover .wspImgGreen {
+        display: none;
+    }
+    
+    
+    
 }
