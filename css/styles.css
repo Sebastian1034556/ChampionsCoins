@@ -218,41 +218,6 @@ main .world {
 }
 
 
-
-.start div .wsp:hover {
-    border: white 0.5rem solid;
-    background: white;
-}
-
-.start div .linkWsp:hover {
-    background: white;
-    font-size: 1.1rem;
-    color: #16A400;
-    text-shadow: 0px 2px 4px #ffffff;
-
-}
-
-.start div div .linkWsp .wspImgWhite {
-    height: 1.5rem;
-    width: 3rem;
-}
-
-.start div div .linkWsp .wspImgGreen {
-    height: 1.5rem;
-    width: 3rem;
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgWhite {
-    display: none;
-}
-
-.start div div .linkWsp:hover .wspImgGreen {
-    display: block;
-}
-
-
-
 .start div div .linkIg .igImg {
     height: 1.5rem;
     width: 3rem;
@@ -274,9 +239,6 @@ main .world {
     margin-left: 3%;
     width: 1.5rem;
 }
-
-
-
 
 .start div .ig {
     border-width: 0.5rem;
@@ -996,3 +958,80 @@ footer div img {
         height: 100vh;
     }
 }
+
+/*CANCELANDO HOVER WSP e INSTAGRAM*/
+@media screen and (min-width:1000px) and (max-width:8000px){
+    
+
+    .start div .wsp:hover {
+        border: white 0.5rem solid;
+        background: white;
+    }
+    
+    .start div .linkWsp:hover {
+        background: white;
+        font-size: 1.1rem;
+        color: #16A400;
+        text-shadow: 0px 2px 4px #ffffff;
+    
+    }
+    
+    .start div div .linkWsp .wspImgWhite {
+        height: 1.5rem;
+        width: 3rem;
+    }
+    
+    .start div div .linkWsp .wspImgGreen {
+        height: 1.5rem;
+        width: 3rem;
+        display: none;
+    }
+    
+    .start div div .linkWsp:hover .wspImgWhite {
+        display: none;
+    }
+    
+    .start div div .linkWsp:hover .wspImgGreen {
+        display: block;
+    }
+    .start div div .linkIg .igImg {
+        height: 1.5rem;
+        width: 3rem;
+        object-fit: contain;
+        margin-left: 2%;
+    }
+    
+    .start div div .linkIg .igImg2 {
+        height: 1.5rem;
+        display: none;
+    }
+    
+    .start div div .linkIg:hover .igImg {
+        display: none;
+    }
+    
+    .start div div .linkIg:hover .igImg2 {
+        display: block;
+        margin-left: 3%;
+        width: 1.5rem;
+    }
+    
+    
+    }
+    @media screen and (max-width:1000px){
+        .start div div .linkWsp .wspImgGreen{
+            display: none;
+        }
+        .start div .wsp:hover {
+            display: none;
+        }
+        .start div div .linkIg:hover .igImg2 {
+            display: none;
+            margin-left: 3%;
+            width: 1.5rem;
+        }
+        .start div .ig:hover {
+            display: none;
+        }
+    }
+    
