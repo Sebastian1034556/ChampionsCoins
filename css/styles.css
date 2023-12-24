@@ -437,12 +437,12 @@ footer div img {
 
     .messi {
         grid-column: 19/31;
-        grid-row: 5/31;
+        grid-row: 6/31;
     }
 
     .ronaldo {
         grid-column: 1/12;
-        grid-row: 4/31;
+        grid-row: 5/31;
     }
 
     .ig {
@@ -496,12 +496,12 @@ footer div img {
 
     .ronaldo {
         grid-column: 1/13;
-        grid-row: 6/31;
+        grid-row: 5/31;
     }
 
     .messi {
         grid-column: 19/31;
-        grid-row: 7/31;
+        grid-row: 6/31;
     }
 
     .championsCoins {
@@ -702,15 +702,7 @@ footer div img {
         width: 2rem;
         margin-left: 0;
     }
-/*
-    .messi {
-        grid-column: 19/29;
-        grid-row: 13/31;
-    }
-    .ronaldo {
-        grid-column: 0/13;
-        grid-row: 12/31;
-    }*/
+
     .start div .wsp .linkWsp .wspImgWhite {
         height: 1rem;
         width: 2rem;
@@ -1035,3 +1027,15 @@ footer div img {
         }
     }
     
+
+/*MESSI Y RONALDO*/
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .messi {
+        grid-column: 19/31;
+        grid-row: 11/31;
+    }
+    .ronaldo {
+        grid-column: 0/13;
+        grid-row: 10/31;
+    }
+}
