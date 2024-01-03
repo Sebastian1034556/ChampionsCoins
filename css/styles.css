@@ -55,13 +55,7 @@ body {
 
 }
 
-.gridContainer1 .gridImg3,
-.gridContainer1 .gridImg4 {
 
-    border-bottom: 0;
-    height: fit-content;
-    width: fit-content;
-}
 
 .gridImg3 {
     border: black solid;
@@ -84,8 +78,8 @@ body {
     height: fit-content;
     width: 100%;
     display: grid;
-    grid-template-columns: (repeat(4, 1fr));
-    grid-template-rows: (repeat (1, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     gap: 0.625rem;
     position: relative;
     font-family: 'Roboto';
@@ -697,7 +691,7 @@ footer div img {
 }
 
 /*-----------------------------------------------------------------MOBILE--------------------------------------------------------------------------*/
-@media screen and (min-width:300px) and (max-width:483px) {
+@media screen and (min-width:200px) and (max-width:483px) {
     .start div .ig .linkIg .igImg {
         height: 1rem;
         width: 2rem;
@@ -722,7 +716,7 @@ footer div img {
     }
 }
 
-@media screen and (min-width:300px) and (max-width:311px) {
+@media screen and (min-width:200px) and (max-width:311px) {
     .start div .wsp .linkWsp {
         font-size: 0.64rem;
     }
@@ -918,7 +912,7 @@ footer div img {
     }
 
 }
-@media screen and (min-width:300px) and (max-width:999px) {
+@media screen and (min-width:200px) and (max-width:999px) {
     .start {
         height: 35vh;
     }
@@ -1030,7 +1024,7 @@ footer div img {
     
 
 /*MESSI Y RONALDO*/
-@media screen and (min-width:300px) and (max-width:1000px) {
+@media screen and (min-width:200px) and (max-width:1000px) {
     .messi {
         grid-column: 19/31;
         grid-row: 11/31;
@@ -1042,7 +1036,7 @@ footer div img {
 }
 
 /*FOOTER*/
-@media screen and (min-width:300px) and (max-width:1000px){
+@media screen and (min-width:200px) and (max-width:1000px){
     footer {height: 20vh;
         margin-top: -8%;
     }
@@ -1052,7 +1046,7 @@ footer div img {
     }
 
 /*grids acomodados*/
-@media screen and (min-width:300px) and (max-width:800px){
+@media screen and (min-width:200px) and (max-width:800px){
     .gridContainer1 {
         padding-top: 15%;
         margin-top: 0; 
@@ -1110,3 +1104,49 @@ footer div img {
             margin-bottom: -0%;
 
     }}
+
+    /* 4k */
+
+@media screen and (min-width: 1925px) and (max-width:3838px) {
+    .space {display: none;}
+    .row {
+        filter: saturate(1.3) contrast(1.1);
+        background-color: blue;
+        background-image: none;
+    }
+    html {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:3839px) {
+    .space {display: none;}
+    .row {
+        filter: saturate(1.3) contrast(1.1);
+        background-color: blue;
+        background-image: none;
+    }
+
+    html {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width:2752px){
+.gridContainer1 .gridImg3,
+.gridContainer1 .gridImg4 {
+
+    border-bottom: 0;
+    height: fit-content;
+    width: fit-content;
+}
+}
+
+@media screen and (min-width:2752px){
+    .gridContainer1 .gridImg3,
+    .gridContainer1 .gridImg4 {
+    
+        border-bottom: 0;
+        height: fit-content;
+    }
+    }
