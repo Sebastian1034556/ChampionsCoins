@@ -5,6 +5,36 @@
     box-sizing: border-box;
 }
 
+
+/*-----------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    position: absolute;
+    top: 0 ;
+    background-color: rgb(2, 10, 85);
+    z-index: 100000;
+}
+header div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header div img {
+    height: 100%;
+    width: 10%;
+}
+header div h1 {
+    font-family: 'roboto';
+    color: rgb(255, 255, 255);
+    color:rgb(255, 240, 69);
+    filter: saturate(3);
+}
 /*------------------------------------------------------------------------------MAIN-----------------------------------------------------------------------------------------*/
 
 body {
@@ -112,6 +142,8 @@ main .world {
     grid-column: 3/4;
     grid-row: auto;
     color: rgb(255, 240, 69);
+    filter: saturate(3);
+    filter:brightness(1.5);
 }
 
 .worldH2 {
@@ -120,6 +152,7 @@ main .world {
 
 .gridContainer2 h3 {
     color: rgb(255, 240, 69);
+    filter: saturate(3);
     height: fit-content;
     width: fit-content;
 }
@@ -1147,4 +1180,16 @@ footer div img {
     .row { 
         background-image: url(.././img/championsbg2-mobile-500px.png)
     }
+}
+@media screen and (min-width:1025px) {
+    header {
+        display: none;
+    }
+}
+
+/*Mucho espacio entre los contenedores de las monedas*/
+@media screen and (max-width:1024px) {
+    main section .world {
+        margin-top: -8%;
+    }    
 }
