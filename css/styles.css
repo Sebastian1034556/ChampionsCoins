@@ -14,14 +14,6 @@ body {
     background-position: center;
     filter: saturate(1.2);
 }
-.space {
-    height: 2vh;
-    background-image: url(../img/championsbg2.jpg);
-    background-position: center;
-    background-repeat: repeat-y;
-    filter: saturate(2.5);
-    margin-bottom: -0.5%;
-}
 
 .start {
     background-image: url(../img/black-bg.jpg);
@@ -1108,7 +1100,7 @@ footer div img {
     /* 4k */
 
 @media screen and (min-width: 1925px) and (max-width:3838px) {
-    .space {display: none;}
+
     .row {
         filter: saturate(1.3) contrast(1.1);
         background-color: blue;
@@ -1150,3 +1142,9 @@ footer div img {
         height: fit-content;
     }
     }
+/*Arreglanod problema fondo mobile*/
+@media screen and (max-width:1024px) {
+    .row { 
+        background-image: url(.././img/championsbg2-mobile-500px.png)
+    }
+}
