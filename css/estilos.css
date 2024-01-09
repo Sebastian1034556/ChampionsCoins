@@ -1,0 +1,842 @@
+/*-----------------------------------------------------------------------------RESET-------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*-----------------------------------------------------------------------------HEADER----------------------------------------------------------------------------------------*/
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  background-color: #020a55;
+  z-index: 100000;
+  border: #000000 0.35rem solid; }
+
+header div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header div img {
+  height: 100%;
+  width: 10%; }
+
+header div h1 {
+  font-family: 'roboto';
+  color: white;
+  color: #fff045;
+  filter: saturate(3); }
+
+/*------------------------------------------------------------------------------MAIN-----------------------------------------------------------------------------------------*/
+body {
+  height: 100vh;
+  background-image: url(../img/black-bg.jpg);
+  width: 100%;
+  background-position: center;
+  filter: saturate(1.2); }
+
+.start {
+  background-image: url(../img/black-bg.jpg);
+  width: 100%;
+  background-position: center;
+  filter: saturate(1.3); }
+
+.row {
+  filter: saturate(1.3) contrast(1.1);
+  background-image: url(../img/championsbg2.webp);
+  height: max-content;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.gridContainer1 {
+  margin-top: 4%;
+  height: fit-content;
+  width: 70%;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+  text-decoration: none; }
+
+.worldGrid {
+  padding-bottom: 2%; }
+
+.gridImg3 {
+  border: black solid; }
+
+.gridImg4 {
+  border: black solid; }
+
+.gridContainer1 .fifaCoins {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.gridContainer2 {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0.625rem;
+  position: relative;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  border: black 0.3rem solid;
+  background-color: #020a55; }
+
+main .gridContainer3 {
+  margin-top: 0%;
+  z-index: 1;
+  margin-bottom: -5%;
+  margin-left: 15%;
+  width: 70%;
+  height: fit-content;
+  background-color: #020a55;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  position: relative;
+  border: black 0.3rem solid; }
+
+main .world {
+  margin-top: 3%;
+  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-items: center;
+  justify-content: center; }
+
+.gridContainer3 h2 {
+  text-shadow: 0px 4px 8px #000000;
+  font-family: 'Roboto';
+  grid-column: 3/4;
+  grid-row: auto;
+  color: #fff045;
+  filter: saturate(3);
+  filter: brightness(1.5); }
+
+.worldH2 {
+  grid-column: 4/5; }
+
+.gridContainer2 h3 {
+  color: #fff045;
+  filter: saturate(3);
+  height: fit-content;
+  width: fit-content; }
+
+.container1 {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(30, 1fr);
+  position: relative; }
+
+.championsCoins img {
+  height: 100%;
+  width: 100%; }
+
+.championsCoins img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.ronaldo img {
+  height: 100%;
+  width: 100%; }
+
+.ronaldo img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01); }
+
+.messi img {
+  height: 100%;
+  width: 100%; }
+
+.messi img:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  transform: scale(1.01); }
+
+.start div .wsp {
+  border: #16A400 0.5rem solid;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; }
+
+.start div .linkWsp {
+  text-decoration: none;
+  color: #fff;
+  font-family: roboto, sans-serif;
+  background: #16A400;
+  text-shadow: 0px 2px 4px #000; }
+
+.start div .wsp .linkWsp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center; }
+
+.start div div .linkIg .igImg {
+  height: 1.5rem;
+  width: 3rem;
+  object-fit: contain;
+  margin-left: 2%; }
+
+.start div div .linkIg .igImg2 {
+  height: 1.5rem;
+  display: none; }
+
+.start div div .linkIg:hover .igImg {
+  display: none; }
+
+.start div div .linkIg:hover .igImg2 {
+  display: block;
+  margin-left: 3%;
+  width: 1.5rem; }
+
+.start div .ig {
+  border-width: 0.5rem;
+  border-style: solid;
+  border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) 1;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem; }
+
+.start div .linkIg {
+  text-decoration: none;
+  color: #fff;
+  font-family: roboto, sans-serif;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  text-shadow: 0px 2px 4px #000; }
+
+.start div .ig .linkIg {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center; }
+
+.start div div .linkIg img {
+  height: 1rem;
+  width: 3.5rem; }
+
+.start div .ig:hover {
+  border: black 0.5rem solid;
+  background: white; }
+
+.start div .linkIg:hover {
+  font-size: 1.1rem;
+  background: black;
+  text-shadow: 0px 2px 4px #000; }
+
+/*-------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------*/
+footer div {
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+footer div img {
+  object-fit: contain; }
+
+/*----------------------------------------------------------------------------MEDIA QUERIES-------------------------------------------------------------------------*/
+@media screen and (min-width: 5572px) {
+  .gridContainer1 {
+    width: 67%;
+    margin-left: 16.5%; } }
+
+@media screen and (min-width: 200px) {
+  html {
+    font-size: 8px; }
+  .gridContainer2 {
+    margin-top: -0.2rem; } }
+
+@media screen and (min-width: 330px) {
+  html {
+    font-size: 10px; }
+  .gridContainer2 {
+    margin-top: -0.3rem; } }
+
+@media screen and (min-width: 430px) {
+  html {
+    font-size: 11px; }
+  .gridContainer2 {
+    margin-top: -0.3rem; } }
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 13px; } }
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 15px; } }
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 17px; } }
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 19px; } }
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 21px; } }
+
+@media screen and (min-width: 1350px) {
+  html {
+    font-size: 23px; } }
+
+@media screen and (min-width: 1500px) {
+  html {
+    font-size: 23px; } }
+
+@media screen and (min-width: 1650px) {
+  html {
+    font-size: 25px; } }
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 27px; } }
+
+@media screen and (min-width: 1950px) {
+  html {
+    font-size: 29px; } }
+
+@media screen and (min-width: 2100px) {
+  html {
+    font-size: 31px; } }
+
+@media screen and (max-width: 5000px) {
+  .wsp {
+    grid-column: 14/18;
+    grid-row: 19/20; }
+  .start .container1 .championsCoins {
+    position: absolute;
+    grid-column: 12/20;
+    grid-row: 1/13; }
+  .start div .linkWsp {
+    font-size: 1.1rem;
+    font-weight: 300; }
+  .start div .linkIg {
+    font-size: 1.1rem;
+    font-weight: 300; }
+  .messi {
+    grid-column: 19/31;
+    grid-row: 6/31; }
+  .ronaldo {
+    grid-column: 1/12;
+    grid-row: 5/31; }
+  .ig {
+    grid-column: 14/18;
+    grid-row: 21/22; } }
+
+@media screen and (max-width: 1460px) {
+  .start .container1 .championsCoins {
+    position: absolute;
+    grid-column: 12/20;
+    grid-row: 3/7; } }
+
+@media screen and (max-width: 1500px) {
+  .messi {
+    grid-column: 19/31;
+    grid-row: 6/31; } }
+
+@media screen and (max-width: 1460px) {
+  .ig {
+    grid-column: 14/18;
+    grid-row: 23/24; }
+  .wsp {
+    grid-column: 14/18;
+    grid-row: 20/22; }
+  .start div .linkWsp {
+    font-size: 1rem;
+    font-weight: 300; }
+  .start div .linkWsp:hover {
+    font-size: 1rem; }
+  .start div .linkIg:hover {
+    font-size: 1rem; }
+  .start div .linkIg {
+    font-size: 1rem; }
+  .ronaldo {
+    grid-column: 1/13;
+    grid-row: 5/31; }
+  .messi {
+    grid-column: 19/31;
+    grid-row: 6/31; }
+  .championsCoins {
+    position: absolute;
+    grid-column: 12/20;
+    grid-row: 6/10; } }
+
+@media screen and (max-width: 1151px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.9rem; }
+  .start div .wsp .linkWsp:hover {
+    font-size: 0.9rem; }
+  .linkIg {
+    font-size: 0.7rem; }
+  .linkIg:hover {
+    font-size: 0.7rem; } }
+
+@media screen and (max-width: 1110px) {
+  .start div .ig .linkIg {
+    font-size: 0.96rem; }
+  .start div .ig .linkIg .igImg {
+    height: 1.40rem;
+    width: 2.8rem;
+    margin-left: 0; }
+  .start div .ig .linkIg .igImg2 {
+    height: 1.4rem;
+    width: 2.8rem;
+    margin-right: 0%; } }
+
+@media screen and (max-width: 1044px) {
+  .start div .ig .linkIg:hover {
+    font-size: 0.85rem; } }
+
+@media screen and (max-width: 1055px) {
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.25rem;
+    width: 2.5rem;
+    margin-left: -3%; }
+  .start div .wsp .linkWsp .wspImgGreen {
+    height: 1.25rem;
+    width: 2.5rem;
+    margin-left: -3%; }
+  .start div .ig .linkIg {
+    font-size: 0.89rem; } }
+
+@media screen and (max-width: 979px) {
+  .start div .ig .linkIg {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 973px) {
+  .start div .wsp .linkWsp .wspImgWhite {
+    margin-top: 0.5%;
+    margin-left: -6%; }
+  .start div .ig .linkIg:hover {
+    font-size: 0.8rem; }
+  .start div .ig .linkIg:hover .igImg {
+    display: block; }
+  .start div .ig:hover {
+    border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) 1; }
+  .start div .ig .linkIg:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+  .start div .ig .linkIg:hover .igImg2 {
+    display: none; } }
+
+@media screen and (max-width: 954px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.8rem; } }
+
+@media screen and (max-width: 899px) {
+  .start div .wsp .linkWsp {
+    font-size: 1rem; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.5rem;
+    width: 3rem; }
+  .start div .wsp .linkWsp .wspImgGreen {
+    height: 1.5rem;
+    width: 3rem; }
+  .start div .ig .linkIg {
+    font-size: 0.96rem; }
+  .start div .ig .linkIg:hover {
+    font-size: 0.96rem; } }
+
+@media screen and (max-width: 849px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.95rem; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.3rem;
+    width: 2.6rem; } }
+
+@media screen and (max-width: 849px) {
+  .wsp {
+    grid-column: 14/18;
+    grid-row: 20/22; } }
+
+@media screen and (max-width: 8500px) {
+  footer {
+    margin-top: 0;
+    height: 15vh; }
+  footer div img {
+    height: 100%;
+    width: 12%; } }
+
+@media screen and (max-width: 1200px) {
+  footer {
+    height: 13vh; } }
+
+@media screen and (max-width: 750px) {
+  footer {
+    height: 10vh; }
+  footer div img {
+    width: 11%; } }
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 10vh; } }
+
+@media screen and (max-width: 430px) {
+  footer div img {
+    width: 13%; } }
+
+/*-----------------------------------------------------------------MOBILE--------------------------------------------------------------------------*/
+@media screen and (min-width: 200px) and (max-width: 483px) {
+  .start div .ig .linkIg .igImg {
+    height: 1rem;
+    width: 2rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1rem;
+    width: 2rem; } }
+
+@media screen and (min-width: 483px) and (max-width: 550px) {
+  .start div .ig .linkIg .igImg {
+    height: 1.2rem;
+    width: 2.4rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.2rem;
+    width: 2.4rem; } }
+
+@media screen and (min-width: 200px) and (max-width: 311px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.64rem; }
+  .start div .ig .linkIg {
+    font-size: 0.64rem; } }
+
+@media screen and (min-width: 311px) and (max-width: 330px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.68rem; }
+  .start div .ig .linkIg {
+    font-size: 0.68rem; } }
+
+@media screen and (min-width: 329px) and (max-width: 340px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.55rem; }
+  .start div .ig .linkIg {
+    font-size: 0.55rem; } }
+
+@media screen and (min-width: 340px) and (max-width: 359px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.5rem; }
+  .start div .ig .linkIg {
+    font-size: 0.5rem; } }
+
+@media screen and (min-width: 360px) and (max-width: 377px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.6rem; }
+  .start div .ig .linkIg {
+    font-size: 0.6rem; } }
+
+@media screen and (min-width: 377px) and (max-width: 400px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.63rem; }
+  .start div .ig .linkIg {
+    font-size: 0.63rem; } }
+
+@media screen and (min-width: 401px) and (max-width: 415px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.67rem; }
+  .start div .ig .linkIg {
+    font-size: 0.67rem; } }
+
+@media screen and (min-width: 415px) and (max-width: 429px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.72rem; }
+  .start div .ig .linkIg {
+    font-size: 0.72rem; } }
+
+@media screen and (min-width: 429px) and (max-width: 462px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.7rem; }
+  .start div .ig .linkIg {
+    font-size: 0.68rem; } }
+
+@media screen and (min-width: 462px) and (max-width: 480px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.77em; }
+  .start div .ig .linkIg {
+    font-size: 0.77rem; } }
+
+@media screen and (min-width: 480px) and (max-width: 510px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.77em; }
+  .start div .ig .linkIg {
+    font-size: 0.77rem; } }
+
+@media screen and (min-width: 510px) and (max-width: 550px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.83em; }
+  .start div .ig .linkIg {
+    font-size: 0.83rem; }
+  .start div .ig .linkIg .igImg {
+    height: 1.3rem;
+    width: 2.6rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.3rem;
+    width: 2.6rem; } }
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.88em; }
+  .start div .ig .linkIg {
+    font-size: 0.88rem; }
+  .start div .ig .linkIg .igImg {
+    height: 1.4rem;
+    width: 2.8rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.4rem;
+    width: 2.8rem; } }
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.81rem; }
+  .start div .ig .linkIg {
+    font-size: 0.81rem; }
+  .start div .ig .linkIg .igImg {
+    height: 1.3rem;
+    width: 2.6rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.3rem;
+    width: 2.6rem; } }
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.96rem; }
+  .start div .ig .linkIg {
+    font-size: 0.96rem; }
+  .start div .ig .linkIg .igImg {
+    height: 1.2rem;
+    width: 2.4rem;
+    margin-left: 0; }
+  .start div .wsp .linkWsp .wspImgWhite {
+    height: 1.2rem;
+    width: 2.4rem; } }
+
+@media screen and (min-width: 749px) and (max-width: 786px) {
+  .start div .wsp .linkWsp {
+    font-size: 0.915rem; }
+  .start div .ig .linkIg {
+    font-size: 0.84rem; } }
+
+@media screen and (min-width: 200px) and (max-width: 999px) {
+  .start {
+    height: 35vh; }
+  main .start .container1 {
+    height: 35vh; }
+  footer {
+    height: 7vh; } }
+
+@media screen and (min-width: 347px) and (max-width: 380px) {
+  .start .container1 .championsCoins {
+    grid-row: 6/19; } }
+
+@media screen and (min-width: 380px) and (max-width: 450px) {
+  .start .container1 .championsCoins {
+    grid-row: 8/19; } }
+
+@media screen and (min-width: 1000px) {
+  .start {
+    height: 100vh; }
+  main section .container1 {
+    height: 100vh; } }
+
+/*CANCELANDO HOVER WSP e INSTAGRAM*/
+@media screen and (min-width: 1000px) and (max-width: 8000px) {
+  .start div .wsp:hover {
+    border: white 0.5rem solid;
+    background: white; }
+  .start div .linkWsp:hover {
+    background: white;
+    font-size: 1.1rem;
+    color: #16A400;
+    text-shadow: 0px 2px 4px #ffffff; }
+  .start div div .linkWsp .wspImgWhite {
+    height: 1.5rem;
+    width: 3rem; }
+  .start div div .linkWsp .wspImgGreen {
+    height: 1.5rem;
+    width: 3rem;
+    display: none; }
+  .start div div .linkWsp:hover .wspImgWhite {
+    display: none; }
+  .start div div .linkWsp:hover .wspImgGreen {
+    display: block; }
+  .start div div .linkIg .igImg {
+    height: 1.5rem;
+    width: 3rem;
+    object-fit: contain;
+    margin-left: 2%; }
+  .start div div .linkIg .igImg2 {
+    height: 1.5rem;
+    display: none; }
+  .start div div .linkIg:hover .igImg {
+    display: none; }
+  .start div div .linkIg:hover .igImg2 {
+    display: block;
+    margin-left: 3%;
+    width: 1.5rem; } }
+
+@media screen and (max-width: 1000px) {
+  .start div div .linkWsp .wspImgGreen {
+    display: none; }
+  .start div .wsp:hover {
+    display: none; }
+  .start div div .linkIg:hover .igImg2 {
+    display: none;
+    margin-left: 3%;
+    width: 1.5rem; }
+  .start div .ig:hover {
+    display: none; } }
+
+/*MESSI Y RONALDO*/
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .messi {
+    grid-column: 19/31;
+    grid-row: 11/31; }
+  .ronaldo {
+    grid-column: 0/13;
+    grid-row: 10/31; } }
+
+/*FOOTER*/
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  footer {
+    height: 20vh;
+    margin-top: -8%; }
+  footer div img {
+    width: 20%; } }
+
+/*grids acomodados*/
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  .gridContainer1 {
+    padding-top: 15%;
+    margin-top: 0;
+    padding-bottom: 10%;
+    margin-bottom: 5%; }
+  main .gridContainer3 {
+    margin-top: 0%;
+    margin-bottom: -15%; } }
+
+@media screen and (min-height: 650px) and (max-height: 800px) {
+  footer {
+    height: 25vh;
+    margin-top: -8%; }
+  footer div img {
+    width: 21%; } }
+
+@media screen and (min-height: 801px) and (max-height: 1000px) {
+  footer {
+    height: 22.5vh;
+    margin-top: -8%; }
+  footer div img {
+    width: 21%; }
+  .gridContainer1 {
+    padding-top: 20%;
+    margin-top: 0;
+    padding-bottom: 20%;
+    margin-bottom: 1%; }
+  main .gridContainer3 {
+    margin-top: 0%;
+    margin-bottom: -20%; } }
+
+@media screen and (min-width: 1000px) and (max-width: 5500px) {
+  footer {
+    height: 13vh;
+    margin-top: -0%; }
+  footer div img {
+    width: 15%; }
+  .gridContainer1 {
+    padding-top: 0%;
+    margin-top: 0;
+    padding-bottom: 5%;
+    margin-bottom: 0%; }
+  main .gridContainer3 {
+    margin-top: 0%;
+    margin-bottom: -0%; } }
+
+/* 4k */
+@media screen and (min-width: 1925px) and (max-width: 3838px) {
+  .row {
+    filter: saturate(1.3) contrast(1.1);
+    background-color: blue;
+    background-image: none; }
+  html {
+    font-size: 40px; } }
+
+@media screen and (min-width: 3839px) {
+  .space {
+    display: none; }
+  .row {
+    filter: saturate(1.3) contrast(1.1);
+    background-color: blue;
+    background-image: none; }
+  html {
+    font-size: 60px; } }
+
+@media screen and (max-width: 2752px) {
+  .gridContainer1 .gridImg3,
+  .gridContainer1 .gridImg4 {
+    border-bottom: 0;
+    height: fit-content;
+    width: fit-content; } }
+
+@media screen and (min-width: 2752px) {
+  .gridContainer1 .gridImg3,
+  .gridContainer1 .gridImg4 {
+    border-bottom: 0;
+    height: fit-content; } }
+
+/*Arreglanod problema fondo mobile*/
+@media screen and (max-width: 1024px) {
+  .row {
+    background-image: url(.././img/championsbg2-mobile-500px.png); } }
+
+@media screen and (min-width: 1025px) {
+  header {
+    display: none; } }
+
+/*Mucho espacio entre los contenedores de las monedas*/
+@media screen and (max-width: 1024px) {
+  main section .world {
+    margin-top: -8%; } }
+
+@media screen and (max-width: 5500px) {
+  header {
+    height: 4vh; } }
+
+@media screen and (max-height: 600px) {
+  header {
+    height: 2.5vh;
+    font-size: 7px; } }
