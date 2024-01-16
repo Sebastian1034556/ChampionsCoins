@@ -94,7 +94,7 @@ body {
 }
 
 
-.gridContainer2 {
+.coins {
     height: fit-content;
     width: 100%;
     display: grid;
@@ -124,6 +124,8 @@ main .gridContainer3 {
     grid-template-rows: repeat(1, 1fr);
     position: relative;
     border: rgb(0, 0, 0) 0.3rem solid;
+    display:flex ;
+    justify-content: center;
 }
 
 main .world {
@@ -140,6 +142,7 @@ main .world {
     grid-column: 3/4;
     grid-row: auto;
     color: rgb(255, 240, 69);
+    font-weight: 500;
     filter: saturate(3);
     filter:brightness(1.5);
 }
@@ -148,8 +151,9 @@ main .world {
     grid-column: 4/5;
 }
 
-.gridContainer2 h3 {
+.coins p {
     color: rgb(255, 240, 69);
+    font-weight:900;
     filter: saturate(3);
     height: fit-content;
     width: fit-content;
@@ -299,10 +303,10 @@ main .world {
 
 }
 
-/*-------------------------------------------------------------------------------FOOTER----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------PAYMENTS-METHODS----------------------------------------------------------------------------------*/
 
 
-footer div {
+.paymentMethods div {
     height: 100%;
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -311,11 +315,29 @@ footer div {
     align-items: center;
 }
 
-footer div img {
+.paymentMethods div img {
     object-fit: contain;
 }
+/*-----------------------------------------------------------------------------------PLATFORMS----------------------------------------------------------------------------------*/
+main .platforms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
 
+/*-----------------------------------------------------------------------------------FOOTER------------------------------------------------------------------------------------*/
+footer {
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer p {
+    font-family: 'Roboto';
+    color: #ffffff;
+}
 
 /*----------------------------------------------------------------------------MEDIA QUERIES-------------------------------------------------------------------------*/
 @media screen and (min-width:5572px) {
@@ -330,7 +352,7 @@ footer div img {
         font-size: 8px;
     }
 
-    .gridContainer2 {
+    .coins {
         margin-top: -0.2rem;
     }
 }
@@ -341,7 +363,7 @@ footer div img {
         font-size: 10px;
     }
 
-    .gridContainer2 {
+    .coins {
         margin-top: -0.3rem;
     }
 }
@@ -351,7 +373,7 @@ footer div img {
         font-size: 11px;
     }
 
-    .gridContainer2 {
+    .coins {
         margin-top: -0.3rem;
     }
 }
@@ -671,41 +693,41 @@ footer div img {
 }
 
 @media screen and (max-width:8500px) {
-    footer {
+    .paymentMethods {
         margin-top: 0;
         height: 15vh;
     }
 
-    footer div img {
+    .paymentMethods div img {
         height: 100%;
         width: 12%;
     }
 }
 
 @media screen and (max-width:1200px) {
-    footer {
-        height: 13vh;
+    main .paymentMethods{
+        height: 10vh;
     }
 }
 
 @media screen and (max-width:750px) {
-    footer {
-        height: 10vh;
+    main .paymentMethods{
+        height: 8vh;
     }
 
-    footer div img {
+    .paymentMethods div img {
         width: 11%;
     }
 }
 
 @media screen and (max-width:600px) {
-    footer {
-        height: 10vh;
+    .paymentMethods{
+        height: 6vh;
     }
 }
 
 @media screen and (max-width:430px) {
-    footer div img {
+    .paymentMethods div img {
         width: 13%;
     }
 }
@@ -940,7 +962,7 @@ footer div img {
     main .start .container1 {
         height: 35vh;
     }
-    footer {
+    .paymentMethods {
         height: 7vh;
     }
 }
@@ -1055,12 +1077,12 @@ footer div img {
     }
 }
 
-/*FOOTER*/
+/*PAYMENTS*/
 @media screen and (min-width:200px) and (max-width:1000px){
-    footer {height: 20vh;
+    .paymentMethods {height: 20vh;
         margin-top: -8%;
     }
-    footer div img {
+    .paymentMethods div img {
         width: 20%;
     }
     }
@@ -1079,19 +1101,20 @@ footer div img {
     }}
 
     @media screen and (min-height:650px) and (max-height:800px)  {
-        footer {height: 25vh;
+        .paymentMethods {height: 25vh;
             margin-top: -8%;
         }
-        footer div img {
+        .paymentMethods div img {
             width: 21%;
         }
     }
 
     @media screen and (min-height:801px) and (max-height:1000px)  {
-        footer {height: 22.5vh;
-            margin-top: -8%;
+        main .paymentMethods {
+            height: 10vh;
+            padding-top: 5%;
         }
-        footer div img {
+        .paymentMethods div img {
             width: 21%;
         }
         .gridContainer1 {
@@ -1107,10 +1130,10 @@ footer div img {
 
     
     @media screen and (min-width:1000px) and (max-width:5500px)  {
-        footer {height: 13vh;
+        .paymentMethods {height: 13vh;
             margin-top: -0%;
         }
-        footer div img {
+        .paymentMethods div img {
             width: 15%;
         }
         .gridContainer1 {
@@ -1131,8 +1154,7 @@ footer div img {
 
     .row {
         filter: saturate(1.3) contrast(1.1);
-        background-color: blue;
-        background-image: none;
+        background-image: url(../img/bluered.webp);
     }
     html {
         font-size: 40px;
@@ -1143,8 +1165,8 @@ footer div img {
     .space {display: none;}
     .row {
         filter: saturate(1.3) contrast(1.1);
-        background-color: blue;
-        background-image: none;
+        background-color: rgb(0, 0, 0);
+        background-image: url(../img/bluered.webp);
     }
 
     html {
@@ -1177,7 +1199,7 @@ footer div img {
 
     }
     .row { 
-        background-image: url(.././img/championsbg2-mobile-500px.png)
+        background-image: url(.././img/championsbg2-mobile-500px.webp)
     }
 }
 @media screen and (min-width:1025px) {
@@ -1211,45 +1233,45 @@ header {
 
 @media screen and (max-width:1024px) {
     body{
-        background-image: url(../img/blueredstart.jpg);
+        background-image: url(../img/blueredstart.webp);
         }
         .start{
-            background-image: url(../img/blueredstart.jpg);
+            background-image: url(../img/blueredstart.webp);
         }
 }
 
 @media screen and (min-width:1024px) {
     body{
-        background-image: url(../img/bluered.jpg);
+        background-image: url(../img/bluered.webp);
         }
         .start{
-            background-image: url(../img/bluered.jpg);
+            background-image: url(../img/bluered.webp);
         }
 }
 
 @media screen and (min-width:1600px) and (max-width:1920px) {
     body{
-        background-image: url(../img/bluered1920px.jpg);
+        background-image: url(../img/bluered1920px.webp);
         }
         .start{
-            background-image: url(../img/bluered1920px.jpg);
+            background-image: url(../img/bluered1920px.webp);
         }
 }
 
 @media screen and (min-width:1370px) and (max-width:1600px) {
     body{
-        background-image: url(../img/bluered1600px.jpg);
+        background-image: url(../img/bluered1600px.webp);
         }
         .start{
-            background-image: url(../img/bluered1600px.jpg);
+            background-image: url(../img/bluered1600px.webp);
         }
 }
 @media screen and (min-width:1024px) and (max-width:1369px)  {
     body{
-        background-image: url(../img/bluered1366px.jpg);
+        background-image: url(../img/bluered1366px.webp);
         }
         .start{
-            background-image: url(../img/bluered1366px.jpg);
+            background-image: url(../img/bluered1366px.webp);
         }
 }
 @media screen and (min-width:370px) and (max-width:1020px){
@@ -1262,5 +1284,78 @@ header {
     header div img {
         display:none;
         width: 5%;
+    }
+}
+
+
+
+
+/*---------------PLATFORMS------------*/
+
+@media screen and (min-height:200px) and (max-height:1000px) {
+    main .platforms {
+        height: 10vh;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    main .platforms .pc {
+        height: 50%;
+        width:30%
+    }
+    main .platforms .ps{
+    height: 80%;
+    width: 30%;
+    }
+    main .platforms .xbox{
+        height:50%;
+        width:20%;
+    }
+}
+@media screen and (min-width:250px) and (max-width:400px) {
+    main .platforms .pc {
+        height: 50%;
+        width:25%
+    }
+    main .platforms .ps{
+    height: 80%;
+    width: 25%;
+    }
+    main .platforms .xbox{
+        height:50%;
+        width:15%;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:5500px) {
+    main .platforms{
+        display: none;
+    }
+}
+/*PAYMENT METHODS ERROR 800PX y 1000px desktop*/
+@media screen and (min-width:800px) and (max-width:1920px) {
+    main .paymentMethods {
+        height: 22.5vh;
+    } 
+
+}
+
+/*-------IMAGEN DEL BODY DEMASIADO GRANDE DESKTOP Y MOBILE-------*/
+@media screen and (min-width:1024px) {
+    body {
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width:1024px) {
+    body {
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width:1024px) {
+    footer {
+        background-image: url(../img/bluered-footer.webp);
+    }
+}
+@media screen and (max-width:1024px) {
+    footer {
+        background-image: url(../img/bluered-footer-mobile.webp);
     }
 }
