@@ -43,20 +43,21 @@
                     <img src="./img/messi-removebg-4.webp" alt="Lionel Messi image" />
                 </div>
 
-                <div class="wsp">
-                    <a class="linkWsp" href="" alt="Whatsapp access link">
+                
+                <div class="wsp" >
+                    <a class="linkWsp" href="https://www.youtube.com/watch?v=8wJzR66l1ck&list=RDGMEMWO-g6DgCWEqKlDtKbJA1Gw&index=3" target="_blank" alt="Whatsapp access link">
                         <strong>WHATSAPP</strong>
                         <img src="./img/wsplogo-removebg.webp" alt="White Whatsapp logo" class="wspImgWhite" />
                         <img src="./img/wsp-green.png" alt="Green Whatsapp logo" class="wspImgGreen" />
                     </a>
                 </div>
 
-                <div class="ig">
+                <div class="ig" @click="openInstagram">
                     <a class="linkIg" href="https://www.instagram.com/champions__coins/"  target="_blank" alt="Instagram access link" >
                         <strong>INSTAGRAM</strong>
                         <img src="./img/ig-logo-white-removebg-preview.webp" alt="White Instagram logo" class="igImg" />
                         <img src="./img/ig-logo-white-removebg-preview.webp" alt="White Instagram logo" class="igImg2" />
-                    </a>
+                    <a>
                 </div>
             </div>
         </section>
@@ -146,7 +147,15 @@
     <footer>
         <p>2024 © Champions Coins. All rights reserved</p>
     </footer>
+<script>
+    const igElement = document.querySelector('.ig');
+    
+    function openInstagram() {
+    window.open('https://www.instagram.com/champions__coins/', '_blank');
+        }
 
+    igElement.addEventListener('click', openInstagram);
+</script>
 </body>
 
 </html>
