@@ -44,16 +44,16 @@
                 </div>
 
                 
-                <div class="wsp" >
-                    <a class="linkWsp" href="https://www.youtube.com/watch?v=8wJzR66l1ck&list=RDGMEMWO-g6DgCWEqKlDtKbJA1Gw&index=3" target="_blank" alt="Whatsapp access link">
+                <div class="wsp" id="whatsapp">
+                    <a class="linkWsp" target="_blank" alt="Whatsapp access link">
                         <strong>WHATSAPP</strong>
                         <img src="./img/wsplogo-removebg.webp" alt="White Whatsapp logo" class="wspImgWhite" />
                         <img src="./img/wsp-green.png" alt="Green Whatsapp logo" class="wspImgGreen" />
                     </a>
                 </div>
 
-                <div class="ig" @click="openInstagram">
-                    <a class="linkIg" href="https://www.instagram.com/champions__coins/"  target="_blank" alt="Instagram access link" >
+                <div class="ig" id="instagram">
+                    <a class="linkIg"  target="_blank" alt="Instagram access link" >
                         <strong>INSTAGRAM</strong>
                         <img src="./img/ig-logo-white-removebg-preview.webp" alt="White Instagram logo" class="igImg" />
                         <img src="./img/ig-logo-white-removebg-preview.webp" alt="White Instagram logo" class="igImg2" />
@@ -147,15 +147,37 @@
     <footer>
         <p>2024 © Champions Coins. All rights reserved</p>
     </footer>
-<script>
-    const igElement = document.querySelector('.ig');
-    
-    function openInstagram() {
-    window.open('https://www.instagram.com/champions__coins/', '_blank');
+
+    <script>
+        // Define las funciones
+        function openInstagram() {
+            window.open('https://www.instagram.com/champions__coins/', '_blank');
         }
 
-    igElement.addEventListener('click', openInstagram);
-</script>
+        function openWhatsApp() {
+            // Enlace para redirigir a la página de WhatsApp
+            var whatsappUrl = 'https://api.whatsapp.com/';
+
+            // Abrir la ventana de WhatsApp en una nueva pestaña
+            window.open(whatsappUrl, '_blank');
+        }
+
+        // Asocia las funciones a los eventos de clic de los elementos correspondientes
+        var igElement = document.getElementById('instagram');
+        var wspElement = document.getElementById('whatsapp');
+        var wspInverted = document.getElementById('instagram')
+        var igInverted = document.getElementById('whatsapp')
+
+        // Verifica el ancho de la pantalla y asigna las funciones en consecuencia
+        if (window.innerWidth <= 1024) {
+            wspInverted.addEventListener('click', openWhatsApp);
+            igInverted.addEventListener('click', openInstagram);
+        } else {
+            igElement.addEventListener('click',openInstagram );
+            wspElement.addEventListener('click', openWhatsApp);
+        }
+    </script>
+
 </body>
 
 </html>
