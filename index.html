@@ -161,20 +161,21 @@
             // Abrir la ventana de WhatsApp en una nueva pestaña
             window.open(whatsappUrl, '_blank');
         }
-
+        let navegador = navigator.userAgent;
         // Asocia las funciones a los eventos de clic de los elementos correspondientes
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
         var igElement = document.getElementById('instagram');
         var wspElement = document.getElementById('whatsapp');
-        var wspInverted = document.getElementById('instagram')
-        var igInverted = document.getElementById('whatsapp')
+        var wspInverted = document.getElementById('instagram');
+        var igInverted = document.getElementById('whatsapp');
 
         // Verifica el ancho de la pantalla y asigna las funciones en consecuencia
-        if (window.innerWidth <= 1024) {
+        if ((navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) ) {
             wspInverted.addEventListener('click', openWhatsApp);
             igInverted.addEventListener('click', openInstagram);
         } else {
-            igElement.addEventListener('click',openInstagram );
-            wspElement.addEventListener('click', openWhatsApp);
+            igElement.addEventListener('click', openInstagram);
+            wspElement.addEventListener('click',openWhatsApp);
         }
     </script>
 
