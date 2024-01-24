@@ -1052,6 +1052,9 @@ footer p {
             display: none;
         }
         .start div .wsp:hover {
+            display: block;
+        }
+        .start div .wsp:hover strong {
             display: none;
         }
         .start div div .linkIg:hover .igImg2 {
@@ -1060,6 +1063,9 @@ footer p {
             width: 1.5rem;
         }
         .start div .ig:hover {
+            display: block;
+        }
+        .start div .ig:hover strong{
             display: none;
         }
     }
