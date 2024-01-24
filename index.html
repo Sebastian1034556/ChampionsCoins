@@ -170,17 +170,15 @@
         var igInverted = document.getElementById('whatsapp');
 
         // Verifica el ancho de la pantalla y asigna las funciones en consecuencia
-        if (window.innerWidth <= 1024) {
-            wspInverted.addEventListener('click', openWhatsApp);
-            igInverted.addEventListener('click', openInstagram);   
-
+        if (!(navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) ) {
+            igElement.addEventListener('click', openInstagram);
+            wspElement.addEventListener('click',openWhatsApp);
         } 
         else {
-            igElement.addEventListener('click', openInstagram);
-            wspElement.addEventListener('click',openWhatsApp);   
+            wspInverted.addEventListener('click', openWhatsApp);
+            igInverted.addEventListener('click', openInstagram);        
         }
     </script>
-
 
 </body>
 
